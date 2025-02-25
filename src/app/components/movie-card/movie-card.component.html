@@ -1,0 +1,16 @@
+<div class="container-movie" routerLink="/movie/{{ id }}">
+  <img class="img-movie" alt="Imagem Filme" src="{{ imgSrc }}" />
+  <div class="footer-movie">
+    <div class="texts-movie">
+      <p class="title-movie">
+        {{ title }}
+      </p>
+      <p class="date-movie">
+        {{ date | date: 'longDate' : '' : language }}
+      </p>
+    </div>
+    <div class="liked-movie" (click)="toggleLikeOrDislike($event)">
+      <i class="bi bi-heart-fill" [ngClass]="{'bi bi-heart-fill': liked, 'bi bi-heart': !liked}"></i>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<div class="content">
+  <div class="box-container">
+    <div class="content-box-container">
+      <h2>{{'pages.home.banner-title'| translate}}</h2>
+
+      <p>{{'pages.home.banner-content'| translate}}</p>
+      <app-common-button
+        label="{{'pages.home.banner-button'| translate}}"
+        [addClass]="'invert-colors'"
+        routerLink="/movies"
+      ></app-common-button>
+    </div>
+  </div>
+  <h2 class="title-content">{{'pages.home.favorites-title'| translate}}</h2>
+  <div class="favorite-movies">
+    <h4 *ngIf="!movies || movies.length == 0">{{'pages.home.no-favorite-message' | translate}}</h4>
+    <div id="carousel-favorites" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container-fluid">
+            <div class="carousel-items-favorite">
+              @for (movie of movies | slice : carouselMin : carouselMax; track $index;) {
+                <app-movie-card
+                [notChangeIcon]="true"
+                [id]="movie.id"
+                [title]="movie.title"
+                [imgSrc]="movie.poster_path_complete"
+                [date]="movie.release_date"
+                (likeChange)="toggleFavorite(movie.id, $event)"
+                [liked]="isMovieInFavorites(movie.id)"
+                [language]="this.language.code"
+              ></app-movie-card>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-favorites-buttons">
+        <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel-favorites"
+        data-bs-slide="prev"
+        (click)="prevCarousel()"
+        *ngIf="carouselMin !== 0"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button
+        class="carousel-control-next carousel-button"
+        type="button"
+        data-bs-target="#carousel-favorites"
+        data-bs-slide="next"
+        (click)="nextCarousel()"
+        *ngIf="movies && carouselMax < movies.length"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+      </div>
+     
+    </div>
+  </div>
+</div>

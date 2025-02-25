@@ -1,0 +1,6 @@
+<button [class]="addClass" [ngClass]="{'larger-button': largerButton, 'disabled': disabled}" [disabled]="disabled">
+    <div>
+        {{label}}
+        <ng-container *ngIf="iconClass"><i [class]="iconClass"></i></ng-container>
+    </div>
+</button>

@@ -1,0 +1,83 @@
+.content {
+  width: 1030px;
+  max-width: 100%;
+}
+
+.title-content {
+  padding-bottom: 12px;
+}
+
+.box-container {
+  max-width: 1030px;
+  margin: 20px 0;
+  height: 248px;
+  border-radius: 6px;
+  color: white;
+  background: linear-gradient(
+      88.65deg,
+      #6d96ff 19.01%,
+      rgba(29, 79, 216, 0) 100.83%
+    ),
+    url("/../assets/banner-homem-aranha.png");
+  background-size: contain;
+  background-position: center center;
+  margin-bottom: 45px;
+}
+
+.content-box-container {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0 0 45px ;
+  width: 50%;
+  height: 230px;
+  gap: 8px;
+  h2 {
+    font-weight: bold;
+  }
+}
+
+.favorite-movies {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px 15px;
+
+  gap: 20px;
+}
+
+.carousel-items-favorite {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: start;
+  gap: 20px;
+}
+
+.carousel-favorites-buttons {
+  button {
+    width: 60px;
+    padding-bottom: 60px;
+  }
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    height: 100%;
+  }
+
+  .box-container {
+    width: auto;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .content-box-container {
+    width: 100%;
+  }
+}

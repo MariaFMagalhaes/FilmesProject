@@ -1,0 +1,17 @@
+
+.modal {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        border-radius: 0px;
+        background-color: rgba(233, 233, 233, 0.35);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        height: 20px;
+        background-color: rgb(193, 193, 193);
+    }
+}

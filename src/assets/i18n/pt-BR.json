@@ -1,0 +1,52 @@
+{
+  "sidenav": {
+    "inicio": "Início",
+    "filmes": "Filmes",
+    "configuracoes": "Configurações",
+    "sair": "Sair"
+  },
+  "pages": {
+    "home": {
+      "banner-title": "Crie sua lista de filmes",
+      "banner-content": "Salve seus filmes favoritos e fique por dentro de todos os detalhes.",
+      "banner-button": "Ver filmes",
+      "favorites-title": "Seus filmes favoritos",
+      "no-favorite-message": "Adicione seus filmes favoritos!"
+    },
+    "movies": {
+      "title": "Filmes",
+      "search-movie-placeholder": "Busque um filme...",
+      "film-list-label": "filmes listados"
+    },
+    "movie-details": {
+      "cast": "Elenco",
+      "synopsis": "Sinopsis",
+      "directed": "Dirigido por",
+      "released": "Lançado em",
+      "forms-review": {
+        "title": "Escreva sua Análise",
+        "date": "Data da visualização",
+        "content": "Sua Análise",
+        "button": "Enviar",
+        "messages": {
+          "all": "Preencha todos os campos para enviar!",
+          "date": "Insira uma data",
+          "review": "Deixe sua análise"
+        }
+      },
+      "reviews": "Todas as Análises",
+      "messages": {
+        "no-cast": "Não contém elenco.",
+        "no-synopsis": "Ainda não contém uma sinopse.",
+        "no-reviews": "Este filme ainda não possui análises.",
+        "posted": "Postado com sucesso!",
+        "fail-post": "Falha no envio!"
+      }
+    },
+    "see-more-button": "Ver mais"
+  },
+  "breadcrumb": {
+    "/": "Início",
+    "movies": "Filmes"
+  }
+}

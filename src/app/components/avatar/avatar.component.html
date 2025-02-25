@@ -1,0 +1,15 @@
+<div class="avatar" [ngClass]="{'no-margin': noMargin}">
+  @if (!imageExists()) {
+    <img class="avatar-image default-image" src="assets/profile-default.jpg" alt="Imagem Avatar"  [ngClass]="{'larger-image': largerImage}"/>
+  } @else {
+    <img class="avatar-image" src="{{ img }}" alt="Imagem Avatar"  [ngClass]="{'larger-image': largerImage}"/>
+  }
+  <div class="avatar-names">
+    <p class="avatar-name" [ngClass]="{'text-bold': isBold}">{{ title }}</p>
+    <ng-container>
+      <p class="avatar-second-name">
+        {{ subtitle }}
+      </p>
+    </ng-container>
+  </div>
+</div>

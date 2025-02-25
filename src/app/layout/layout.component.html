@@ -1,0 +1,29 @@
+<main>
+  <app-sidenav></app-sidenav>
+  <div class="main-content">
+    <div class="header-main-content">
+      <app-breadcrumb [breadcrumbs]="breadcrumb"></app-breadcrumb>
+      <div class="dropdown">
+        <button
+          class="btn btn-outline-secondary btn-sm dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          {{ language.name }} <span class="{{ language.iconClass }}"></span>
+        </button>
+        <ul class="dropdown-menu">
+          @for (lang of languages; track $index) {
+          <li>
+            <a class="dropdown-item" (click)="selectLanguage(lang)"
+              >{{ lang.name }} <span class="{{ lang.iconClass }}"></span
+            ></a>
+          </li>
+          }
+        </ul>
+      </div>
+    </div>
+
+    <router-outlet> </router-outlet>
+  </div>
+</main>

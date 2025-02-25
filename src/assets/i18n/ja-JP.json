@@ -1,0 +1,55 @@
+{
+  "sidenav": {
+    "inicio": "ホーム",
+    "filmes": "映画",
+    "configuracoes": "コンフィギュレーション",
+    "sair": "出口"
+  },
+  "pages": {
+    "home": {
+      "banner-title": "映画リストを作成する",
+      "banner-content": "お気に入りの映画を保存し、すべての詳細を確認しましょう。",
+      "banner-button": "映画を見る",
+      "favorites-title": "お気に入りの映画",
+"no-favorite-message": "お気に入りの映画を追加してください!"
+
+
+    },
+
+    "movies": {
+      "title": "映画",
+      "search-movie-placeholder": "映画を検索します。。。",
+      "film-list-label": "映画のリスト"
+    },
+    "movie-details": {
+      "cast": "キャスト",
+      "synopsis": "概要",
+      "directed": "監督, ",
+      "released": "発売された、",
+      "forms-review": {
+        "title": "レビューを書く",
+        "date": "見た日",
+        "content": "レビュー内容",
+        "button": "送信",
+        "messages": {
+          "all": "送信するためにはすべての項目を入力してください！",
+          "date": "日付を入力してください",
+          "review": "レビューを残してください"
+        }
+      },
+      "reviews": "すべてのレビュー",
+      "messages": {
+        "no-cast": "キャスト情報はありません。",
+        "no-synopsis": "あらすじはまだありません。",
+        "no-reviews": "この映画にはまだレビューがありません。",
+        "posted": "正常に投稿されました！",
+        "fail-post": "投稿に失敗しました！"
+      }
+    },
+    "see-more-button": "もっと見る"
+  },
+  "breadcrumb": {
+    "/": "ホーム",
+    "movies": "映画"
+  }
+}

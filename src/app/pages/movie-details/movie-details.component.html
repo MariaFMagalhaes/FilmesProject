@@ -1,0 +1,149 @@
+<div class="content">
+    <h2 class="title-content">{{ movie.title }}</h2>
+    <div class="details">
+      <div class="film-details box-details">
+        <img class="img-film" alt="Filme Image" [src]="movie.poster_path_complete" />
+        <div class="footer-details">
+          <div class="">
+            <app-badge [text]="movie.vote_average | number: '1.0-1' : 'en-US'" [className]="'badge-rate'" [iconClass]="'bi bi-star-fill text-warning'"></app-badge>
+          </div>
+          <div class="text-footer-details">
+            <p>{{'pages.movie-details.directed' | translate}}
+              @for (director of movie.crew; track $index) {
+                @if ($index == 0) {
+                  <span class="fw-bold">{{director.name}}</span>
+                } @else {
+                  <span class="fw-bold">, {{director.name}}</span>
+                }
+              }
+            </p>
+            <p class="date-text-footer-details">{{ 'pages.movie-details.released' | translate}} {{ movie.release_date | date: 'longDate': '' : language.code  }}</p>
+          </div>
+        </div>
+        <div class="categories-details">
+          @for (genre of movie.genres; track $index) {
+            <app-badge [text]="genre.name" [className]="'badge-category'"></app-badge>
+          }
+        </div>
+   
+      </div>
+      <div class="other-details">
+        <div class="elenco-details box-details">
+          <h5>{{'pages.movie-details.cast' | translate}}</h5>
+
+          @if(movie.cast && movie.cast.length > 0) {
+            <div class="elenco-container">
+              
+              @for (actor of movie.cast | slice:0: 4; track $index) {
+                <div class="elenco-item">
+                  <app-avatar [title]="actor.name" [largerImage]="true" img="{{movieImageUrl}}{{actor.profile_path}}" [subtitle]="actor.character" [isBold]="true"></app-avatar>
+                </div>
+              }
+           
+            </div>
+          
+          <div class="elenco-see-more">
+            <app-common-button  *ngIf="movie.cast.length > 4" label="{{'pages.see-more-button' | translate}}" data-bs-toggle="modal" data-bs-target="#modal-cast"></app-common-button>
+          </div>
+        } @else {
+          <p class="elenco-message">{{ 'pages.movie-details.messages.no-cast' | translate}}</p>
+      }
+        </div>
+        <div class="sinopse-details box-details">
+          <h5 class="sinopse-header">{{ 'pages.movie-details.synopsis' | translate }}</h5>
+          <p>
+             @if(movie.overview){
+              {{movie.overview}}
+             } @else {
+              <p>{{ 'pages.movie-details.messages.no-synopsis' | translate}}</p>
+             }
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <app-modal [id]="'modal-cast'" title="{{'pages.movie-details.elenco' | translate}}" [isLarge]="true">
+      <ng-content modal-body>
+        @for (actor of movie.cast; track $index) {
+          <hr *ngIf="$index !== 0">
+          <div class="actor-modal-body">
+            <app-avatar [title]="actor.name" [largerImage]="true" [img]="actor.profile_path_complete" [subtitle]="actor.character" [hover]="true" [isBold]="true" [noMargin]="true"></app-avatar>
+          </div>
+        }
+      </ng-content>
+    </app-modal>
+
+    <div class="reviews">
+      <div class="make-review box-details">
+        <h5>{{'pages.movie-details.forms-review.title' | translate}}</h5>
+        <form class="forms-make-review" [formGroup]="reviewForms" (ngSubmit)="onSubmitReview()">
+          <div *ngIf="submitNotValid" class="message-form text-danger text-center">
+            {{'pages.movie-details.forms-review.messages.all' | translate}}
+          </div>
+          <app-rating-star [control]="$any(reviewForms.controls['rating'])">
+
+          </app-rating-star>
+          <div class="form-item watched-date">
+            <label for="watchedDate">{{'pages.movie-details.forms-review.date' | translate}} </label>
+            <input type="date" min="{{movie.release_date | date:'yyyy-MM-dd'}}" max="{{getCurrentDate() }}" id="watchedDate" formControlName="watchedDate">  
+            <div *ngIf="reviewForms.get('watchedDate')?.invalid && reviewForms.get('watchedDate')?.touched" class="message-form text-danger" >
+
+              <p *ngIf="reviewForms.get('watchedDate')?.hasError('required')">{{ 'pages.movie-details.forms-review.messages.date' | translate}}</p>
+            </div>
+          </div>
+          <div class="form-item review-content">
+            <label for="reviewContent">{{'pages.movie-details.forms-review.content' | translate}} </label>
+            <textarea id="reviewContent" formControlName="reviewContent"></textarea>
+            <div *ngIf="reviewForms.get('reviewContent')?.invalid && reviewForms.get('reviewContent')?.touched"  class="message-form text-danger" >
+              
+              <p *ngIf="reviewForms.get('reviewContent')?.hasError('required')">{{ 'pages.movie-details.forms-review.messages.review' | translate}}</p>
+
+            </div>
+          </div>
+          <div class="button-item" >
+            <app-common-button label="{{'pages.movie-details.forms-review.button' | translate}}" [largerButton]="true"></app-common-button>
+          </div>
+        </form>
+      </div>
+      <div class="all-reviews box-details">
+        <h5>{{'pages.movie-details.reviews' | translate}}</h5>
+        @if (reviews && reviews.length != 0) {
+          @for (review of reviews; track $index) {
+            <div class="review-users">
+              <div class="review-users-img">
+                <img src="assets/profile-default.jpg" alt="imagem review">
+              </div>
+              <div class="review-user-details">
+                <div class="header-review-details">
+                  <p class="username-review-details">{{ review.author }}</p>
+                  <div class="items-header-review-details">
+                    <p class="rate-review-details"> <span class="bi bi-star-fill star-color text-warning"></span>{{ review.rating }}</p>
+                  </div>
+                </div>
+                <p class="review-content-details">{{ review.reviewContent }}</p>
+              </div>
+            </div>
+            <p class="review-date-details">{{review.reviewDate | date: 'longDate' : '' : language.code}}</p>
+            <hr *ngIf="$index !== reviews.length - 1">
+          }
+        }@else {
+          <div class="no-reviews">{{ 'pages.movie-details.messages.no-reviews' | translate}}</div>
+        }
+      </div>
+
+    </div>
+    
+    <div class="alert-container">
+      <div *ngIf="submited" class="alert alert-success alert-dismissible text-center fade show" role="alert">
+        <strong>{{ 'pages.movie-details.messages.posted' | translate}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="submited = false"></button>
+      </div>
+    </div>
+
+    <div class="alert-container">
+      <div *ngIf="submitRequestFail" class="alert alert-danger alert-dismissible text-center fade show" role="alert">
+        <strong>{{ 'pages.movie-details.messages.fail-post' | translate}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="submitRequestFail = false"></button>
+      </div>
+    </div>

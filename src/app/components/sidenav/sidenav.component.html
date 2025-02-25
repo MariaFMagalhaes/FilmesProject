@@ -1,0 +1,33 @@
+<div class="side-bar">
+  <app-avatar [img]="userImg" [title]="userName"></app-avatar>
+  <div class="options-side-bar">
+    <div class="options-list-group">
+      
+      <a
+        class="options-list-group-item"
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >{{'sidenav.inicio' | translate }}</a
+      >
+      <a
+      class="options-list-group-item"
+      [class.active]="isMoviesActive()"
+        routerLink="/movies"
+        >{{'sidenav.filmes' | translate}}</a
+      >
+    </div>
+  </div>
+  <div class="options-side-bar">
+    <div class="options-list-group">
+      <a
+        class="options-list-group-item"
+        >{{'sidenav.configuracoes' | translate}}</a
+      >
+      <a
+      class="options-list-group-item"
+        >{{'sidenav.sair' | translate}}</a
+      >
+    </div>
+  </div>
+</div>

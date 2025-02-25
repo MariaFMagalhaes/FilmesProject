@@ -1,0 +1,34 @@
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.main-content {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+    padding: 43px 46px 54px;
+}
+
+.header-main-content {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .dropdown {
+        padding-right: 20px;
+    }
+}
+
+.dropdown {
+    margin-right: 50px;
+}
+
+@media (min-width: 1550px) {
+    .header-main-content {
+        width: 70%;
+    }
+}

@@ -1,0 +1,38 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    top: 50px;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(255, 222, 37);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 85px;
+}
+
+#robot-icon {
+    font-size: 200px;
+}
+
+.container h5 {
+    margin-top: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button-back {
+    margin-top: 15px;
+}

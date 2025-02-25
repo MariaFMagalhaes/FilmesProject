@@ -1,0 +1,28 @@
+.badge-movies {
+  background-color: #1d4ed8;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.badge-movies i {
+  font-size: 21px;
+}
+
+.badge-rate {
+  font-weight: bold;
+  padding: 12px 20px;
+  display: flex;
+  text-align: center;
+  gap: 12px;
+}
+
+.badge-category {
+  font-size: 14px !important;
+  padding: 10px 26px;
+}

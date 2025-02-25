@@ -1,0 +1,442 @@
+{
+  "reviews": [
+    {
+      "id": "1",
+      "movieId": 550,
+      "author": "João Silva",
+      "rating": 9,
+      "reviewContent": "Um filme incrível com reviravoltas inesperadas!",
+      "reviewDate": "2025-02-10T14:30:00Z",
+      "watchedDate": "2025-02-05T20:00:00Z"
+    },
+    {
+      "id": "be3c",
+      "movieId": 539972,
+      "author": "Drogo",
+      "rating": "4",
+      "reviewDate": "2025-02-11T12:10:14.505Z",
+      "reviewContent": "Legal!",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "f078",
+      "movieId": 939243,
+      "author": "Drogo",
+      "rating": "7",
+      "reviewDate": "2025-02-11T12:12:31.978Z",
+      "reviewContent": "aaa",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "ef19",
+      "movieId": 939243,
+      "author": "Drogo",
+      "rating": "0",
+      "reviewDate": "2025-02-11T12:35:03.511Z",
+      "reviewContent": "ChatÃo",
+      "watchedDate": "2024-05-15"
+    },
+    {
+      "id": "8a3d",
+      "movieId": 939243,
+      "author": "Grogu",
+      "rating": "3",
+      "reviewDate": "2025-02-11T12:39:45.838Z",
+      "reviewContent": "Ridículo",
+      "watchedDate": "2025-01-29"
+    },
+    {
+      "id": "13a9",
+      "movieId": 539972,
+      "author": "Grogu",
+      "rating": "0",
+      "reviewDate": "2025-02-11T13:01:27.678Z",
+      "reviewContent": "Chatasso",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "176b",
+      "movieId": 539972,
+      "author": "Grogu",
+      "rating": "5",
+      "reviewDate": "2025-02-11T13:01:36.205Z",
+      "reviewContent": "Legalzao",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "988e",
+      "movieId": 939243,
+      "author": "Grogu",
+      "rating": "5",
+      "reviewDate": "2025-02-11T13:19:13.729Z",
+      "reviewContent": "a",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "0727",
+      "movieId": 939243,
+      "author": "Grogu",
+      "rating": "9",
+      "reviewDate": "2025-02-11T13:32:26.234Z",
+      "reviewContent": "Mais ou menos",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "f161",
+      "movieId": 939243,
+      "author": "Grogu",
+      "rating": "8",
+      "reviewDate": "2025-02-11T13:48:05.375Z",
+      "reviewContent": "dsadsa",
+      "watchedDate": "2025-02-06"
+    },
+    {
+      "id": "730a",
+      "movieId": 939243,
+      "author": "Grogu",
+      "rating": "8",
+      "reviewDate": "2025-02-11T13:50:20.061Z",
+      "reviewContent": "aaa",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "b03f",
+      "movieId": 710295,
+      "author": "Grogu",
+      "rating": "5",
+      "reviewDate": "2025-02-11T13:59:14.676Z",
+      "reviewContent": "daaasa",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "3fe9",
+      "movieId": 1410082,
+      "author": "Grogu",
+      "rating": "3",
+      "reviewDate": "2025-02-11T13:59:28.771Z",
+      "reviewContent": "g",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "f83c",
+      "movieId": 1160956,
+      "author": "Grogu",
+      "rating": "4",
+      "reviewDate": "2025-02-11T14:02:57.494Z",
+      "reviewContent": "ola",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "8092",
+      "movieId": 1160956,
+      "author": "Grogu",
+      "rating": "1",
+      "reviewDate": "2025-02-11T14:03:17.884Z",
+      "reviewContent": "hhh",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "470a",
+      "movieId": 1160956,
+      "author": "Grogu",
+      "rating": "4",
+      "reviewDate": "2025-02-11T16:06:23.785Z",
+      "reviewContent": "액션 스타 재키가 우연히 전 세계적인 인기를 한 몸에 받고 있는 ‘후후’라는 아기 판다 구출 작전에 합류하게 되면서 벌어지는 이야기",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "a5df",
+      "movieId": 1160956,
+      "author": "Grogu",
+      "rating": "9",
+      "reviewDate": "2025-02-11T16:06:37.823Z",
+      "reviewContent": "액션 스타 재키가 우연히 전 세계적인 인기를 한 몸에 받고 있는 ‘후후’라는 아기 판다 구출 작전에 합류하게 되면서 벌어지는 이야기액션 스타 재키가 우연히 전 세계적인 인기를 한 몸에 받고 있는 ‘후후’라는 아기 판다 구출 작전에 합류하게 되면서 벌어지는 이야기액션 스타 재키가 우연히 전 세계적인 인기를 한 몸에 받고 있는 ‘후후’라는 아기 판다 구출 작전에 합류하게 되면서 벌어지는 이야기액션 스타 재키가 우연히 전 세계적인 인기를 한 몸에 받고 있는 ‘후후’라는 아기 판다 구출 작전에 합류하게 되면서 벌어지는 이야기액션 스타 재키가 우연히 전 세계적인 인기를 한 몸에 받고 있는 ‘후후’라는 아기 판다 구출 작전에 합류하게 되면서 벌어지는 이야기",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "6a3c",
+      "movieId": 762509,
+      "author": "Grogu",
+      "rating": "10",
+      "reviewDate": "2025-02-11T16:07:56.007Z",
+      "reviewContent": "길을 잃고 혼자가 된 새끼 사자 무파사는 광활한 야생을 떠돌던 중 왕의 혈통이자 예정된 후계자 타카와 우연히 만나게 된다. 마치 친형제처럼 끈끈한 우애를 나누며 함께 자란 무파사와 타카는 운명을 개척하기 위해 거대한 여정을 함께 떠난다. 한 치 앞을 알 수 없는 적들의 위협 속에서 두 형제의 끈끈했던 유대에 금이 가기 시작하고 예상치 못한 위기까지 맞닥뜨리게 되는데…길을 잃고 혼자가 된 새끼 사자 무파사는 광활한 야생을 떠돌던 중 왕의 혈통이자 예정된 후계자 타카와 우연히 만나게 된다. 마치 친형제처럼 끈끈한 우애를 나누며 함께 자란 무파사와 타카는 운명을 개척하기 위해 거대한 여정을 함께 떠난다. 한 치 앞을 알 수 없는 적들의 위협 속에서 두 형제의 끈끈했던 유대에 금이 가기 시작하고 예상치 못한 위기까지 맞닥뜨리게 되는데…길을 잃고 혼자가 된 새끼 사자 무파사는 광활한 야생을 떠돌던 중 왕의 혈통이자 예정된 후계자 타카와 우연히 만나게 된다. 마치 친형제처럼 끈끈한 우애를 나누며 함께 자란 무파사와 타카는 운명을 개척하기 위해 거대한 여정을 함께 떠난다. 한 치 앞을 알 수 없는 적들의 위협 속에서 두 형제의 끈끈했던 유대에 금이 가기 시작하고 예상치 못한 위기까지 맞닥뜨리게 되는데…길을 잃고 혼자가 된 새끼 사자 무파사는 광활한 야생을 떠돌던 중 왕의 혈통이자 예정된 후계자 타카와 우연히 만나게 된다. 마치 친형제처럼 끈끈한 우애를 나누며 함께 자란 무파사와 타카는 운명을 개척하기 위해 거대한 여정을 함께 떠난다. 한 치 앞을 알 수 없는 적들의 위협 속에서 두 형제의 끈끈했던 유대에 금이 가기 시작하고 예상치 못한 위기까지 맞닥뜨리게 되는데…길을 잃고 혼자가 된 새끼 사자 무파사는 광활한 야생을 떠돌던 중 왕의 혈통이자 예정된 후계자 타카와 우연히 만나게 된다. 마치 친형제처럼 끈끈한 우애를 나누며 함께 자란 무파사와 타카는 운명을 개척하기 위해 거대한 여정을 함께 떠난다. 한 치 앞을 알 수 없는 적들의 위협 속에서 두 형제의 끈끈했던 유대에 금이 가기 시작하고 예상치 못한 위기까지 맞닥뜨리게 되는데…",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "29d9",
+      "movieId": 762509,
+      "author": "Grogu",
+      "rating": "5",
+      "reviewDate": "2025-02-11T16:08:02.624Z",
+      "reviewContent": "길을 잃고 혼자가 된 새끼 사자 무파사는 광활한 야생을 떠돌던 중 왕의 혈통이자 예정된 후계자 타카와 우연히 만나게 된다. 마치 친형제처럼 끈끈한 우애를 나누며 함께 자란 무파사와 타카는 운명을 개척하기 위해 거대한 여정을 함께 떠난다. 한 치 앞을 알 수 없는 적들의 위협 속에서 두 형제의 끈끈했던 유대에 금이 가기 시작하고 예상치 못한 위기까지 맞닥뜨리게 되는데…",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "ab41",
+      "movieId": 762509,
+      "author": "Grogu",
+      "rating": "5",
+      "reviewDate": "2025-02-11T16:10:39.018Z",
+      "reviewContent": "仲睦まじく育ってきたムファサとタカはなぜ別の道を歩むことになってしまったのか、王家の血を引くタカではなく、なぜ孤児のムファサが王になったのか。『ライオン・キング』では明かされなかったシンバの父、偉大なる王ムファサの“はじまりの物語”が語られる。",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "37d7",
+      "movieId": 762509,
+      "author": "Grogu",
+      "rating": "3",
+      "reviewDate": "2025-02-11T16:16:10.785Z",
+      "reviewContent": "as",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "83c3",
+      "movieId": 762509,
+      "author": "Grogu",
+      "rating": "6",
+      "reviewDate": "2025-02-11T16:20:29.491Z",
+      "reviewContent": "ddd",
+      "watchedDate": "2025-02-11"
+    },
+    {
+      "id": "50e0",
+      "movieId": 762509,
+      "author": "Grogu",
+      "rating": "9",
+      "reviewDate": "2025-02-11T16:24:13.105Z",
+      "reviewContent": "d",
+      "watchedDate": "2025-01-31"
+    },
+    {
+      "id": "bbaa",
+      "movieId": 1241982,
+      "author": "Grogu",
+      "rating": "5",
+      "reviewDate": "2025-02-11T16:27:32.569Z",
+      "reviewContent": "Depois de receber um chamado inesperado de seus ancestrais navegadores, Moana vai viajar para mares distantes da Oceania, em águas perdidas em uma aventura perigosa.",
+      "watchedDate": "2025-02-22"
+    },
+    {
+      "id": "d9d6",
+      "movieId": 1160956,
+      "author": "Grogu",
+      "rating": "7",
+      "reviewDate": "2025-02-12T12:42:09.876Z",
+      "reviewContent": "this.router.events.pipe(\n    filter(event => event instanceof ActivationEnd),\n    map(event => (<ActivationEnd>event).snapshot),\n    map(snapshot => (<ActivatedRouteSnapshot>snapshot).data)).subscribe(data => {\n        console.log('data from the NEW route: ' + data);\n    });",
+      "watchedDate": "2025-02-12"
+    },
+    {
+      "id": "bcdb",
+      "movieId": 1241982,
+      "author": "Grogu",
+      "rating": "6",
+      "reviewDate": "2025-02-12T14:11:59.569Z",
+      "reviewContent": "ddddddd",
+      "watchedDate": "2025-02-12"
+    },
+    {
+      "id": "c90b",
+      "movieId": 539972,
+      "author": "Grogu",
+      "rating": "9",
+      "reviewDate": "2025-02-12T14:14:14.171Z",
+      "reviewContent": "fff",
+      "watchedDate": "2025-02-12"
+    },
+    {
+      "id": "5448",
+      "movieId": 1241982,
+      "author": "Grogu",
+      "rating": "3",
+      "reviewDate": "2025-02-12T14:30:39.215Z",
+      "reviewContent": "dddd",
+      "watchedDate": "2025-02-13"
+    },
+    {
+      "id": "55b6",
+      "movieId": 912649,
+      "author": "Grogu",
+      "rating": "5",
+      "reviewDate": "2025-02-12T16:20:17.982Z",
+      "reviewContent": "Ola",
+      "watchedDate": "2025-02-12"
+    },
+    {
+      "id": "9f5b",
+      "movieId": 1241982,
+      "author": "Grogu",
+      "rating": "10",
+      "reviewDate": "2025-02-14T13:26:50.810Z",
+      "reviewContent": "]",
+      "watchedDate": "2024-11-21"
+    },
+    {
+      "id": "b4ab",
+      "movieId": 939243,
+      "author": "Grogu",
+      "rating": "5",
+      "reviewDate": "2025-02-14T13:39:58.974Z",
+      "reviewContent": "ds",
+      "watchedDate": "2025-02-06"
+    },
+    {
+      "id": "01c9",
+      "movieId": 939243,
+      "author": "Grogu",
+      "rating": "4",
+      "reviewDate": "2025-02-14T13:54:18.565Z",
+      "reviewContent": "sa",
+      "watchedDate": "2025-02-05"
+    },
+    {
+      "id": "1fac",
+      "movieId": 939243,
+      "author": "Grogu",
+      "rating": 0,
+      "reviewDate": "2025-02-14T13:56:44.040Z",
+      "reviewContent": "y",
+      "watchedDate": "2025-02-14"
+    },
+    {
+      "id": "1ea6",
+      "movieId": 939243,
+      "author": "Grogu",
+      "rating": 0,
+      "reviewDate": "2025-02-14T13:57:21.517Z",
+      "reviewContent": "d",
+      "watchedDate": "2025-02-14"
+    },
+    {
+      "id": "0c24",
+      "movieId": 939243,
+      "author": "Grogu",
+      "rating": "7",
+      "reviewDate": "2025-02-14T14:02:49.402Z",
+      "reviewContent": "s",
+      "watchedDate": "2025-02-14"
+    },
+    {
+      "id": "8535",
+      "movieId": 939243,
+      "author": "Grogu",
+      "rating": "4",
+      "reviewDate": "2025-02-14T14:13:58.685Z",
+      "reviewContent": "zaadsa",
+      "watchedDate": "2025-02-13"
+    },
+    {
+      "id": "3c21",
+      "movieId": 1138749,
+      "author": "Grogu",
+      "rating": "9",
+      "reviewDate": "2025-02-14T14:17:13.076Z",
+      "reviewContent": "Ruim",
+      "watchedDate": "2025-02-14"
+    },
+    {
+      "id": "dd87",
+      "movieId": 1241982,
+      "author": "Grogu",
+      "rating": "7",
+      "reviewDate": "2025-02-14T14:21:26.626Z",
+      "reviewContent": "ffff",
+      "watchedDate": "2025-02-14"
+    },
+    {
+      "id": "3559",
+      "movieId": 539972,
+      "author": "Grogu",
+      "rating": 0,
+      "reviewDate": "2025-02-17T11:09:00.097Z",
+      "reviewContent": "a",
+      "watchedDate": "2025-02-17"
+    },
+    {
+      "id": "e57a",
+      "movieId": 539972,
+      "author": "Grogu",
+      "rating": 0,
+      "reviewDate": "2025-02-17T11:09:05.801Z",
+      "reviewContent": "a",
+      "watchedDate": "2025-02-12"
+    },
+    {
+      "id": "63e8",
+      "movieId": 539972,
+      "author": "Grogu",
+      "rating": 0,
+      "reviewDate": "2025-02-17T11:11:30.259Z",
+      "reviewContent": "a",
+      "watchedDate": "2025-02-17"
+    },
+    {
+      "id": "971e",
+      "movieId": 539972,
+      "author": "Grogu",
+      "rating": 0,
+      "reviewDate": "2025-02-17T11:19:10.223Z",
+      "reviewContent": "a",
+      "watchedDate": "2025-02-17"
+    },
+    {
+      "id": "2136",
+      "movieId": 539972,
+      "author": "Grogu",
+      "rating": "0",
+      "reviewDate": "2025-02-17T11:19:50.827Z",
+      "reviewContent": "a",
+      "watchedDate": "2025-02-17"
+    },
+    {
+      "id": "1ded",
+      "movieId": 1357633,
+      "author": "Grogu",
+      "rating": "8",
+      "reviewDate": "2025-02-17T11:28:07.870Z",
+      "reviewContent": "h",
+      "watchedDate": "2025-02-17"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "785b",
+      "movieId": 822119,
+      "user": "Grogu"
+    },
+    {
+      "id": "c515",
+      "movieId": 939243,
+      "user": "Grogu"
+    },
+    {
+      "id": "5d8d",
+      "movieId": 927342,
+      "user": "Grogu"
+    },
+    {
+      "id": "1d5a",
+      "movieId": 710295,
+      "user": "Grogu"
+    },
+    {
+      "id": "35f9",
+      "movieId": 539972,
+      "user": "Grogu"
+    },
+    {
+      "id": "31d1",
+      "movieId": 1272149,
+      "user": "Grogu"
+    },
+    {
+      "id": "2475",
+      "movieId": 845781,
+      "user": "Grogu"
+    },
+    {
+      "id": "c972",
+      "movieId": 839033,
+      "user": "Grogu"
+    }
+  ]
+}

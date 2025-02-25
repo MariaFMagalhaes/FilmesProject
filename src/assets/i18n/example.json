@@ -1,0 +1,40 @@
+{
+    "funcionalidades": {
+        "home": {
+            "menu": "Home",
+            "titulo": "Welcome!"
+        },
+        "filmes": {
+            "titulo": "Movies",
+            "busqueFilme": "Busque um filme..."
+        }        
+    },
+    
+    "pages": {
+        "home": {
+            "titulo": "Início"
+        },
+        "filmes": {
+            "titulo": "Filmes",
+            "buscarFilmePlaceholder": "Buscar um filme..."
+        },
+        "filmeDetalhes": {
+            "sinopse": "sinopse"
+        }
+    },
+    
+    "inicio": "Home",
+    "filme": "Movies",
+    "search": "Search for a movie...",
+    "filmes listados": "listed movies",
+    "Configurações": "Configurations",
+    "Exit": "Exit",
+    "Elenco": "Cast",
+    "Ver mais": "See more",
+    "Sinopse": "Synopsis",
+    "Lançado em": "",
+    "Dirigido por": ""
+}
+
+<span>{{filmes.busqueFilme}}</span>
+<span>{{funcionalidades.filmes.titulo}}</span>

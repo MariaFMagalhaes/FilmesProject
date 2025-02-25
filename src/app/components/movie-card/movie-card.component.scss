@@ -1,0 +1,55 @@
+.container-movie {
+  max-width: 230px;
+  max-height: 350px;
+  width: auto;
+  height: auto;
+  margin-bottom: 55px;
+}
+
+.footer-movie {
+  display: flex;
+  justify-content: space-between;
+}
+
+.texts-movie p {
+  margin-bottom: 5px;
+}
+
+.title-movie {
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.date-movie {
+  font-size: 14px;
+}
+
+.img-movie {
+  display: block;
+  border-radius: 8px;
+  width: 230px;
+  height: 335px;
+  object-fit: cover;
+  margin-bottom: 8px;
+  float: inherit;
+  background-size: cover;
+  transition: all .1s ease-in-out;
+}
+
+.img-movie:hover {
+  transform: scale(1.05); 
+}
+
+.liked-movie {
+  font-size: 12px;
+  align-self: center;
+  transition: all .1s ease-in-out;
+}
+
+.liked-movie:hover {
+  transform: scale(1.8);
+}

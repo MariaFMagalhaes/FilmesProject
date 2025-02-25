@@ -1,0 +1,48 @@
+<div class="content">
+<div class="header">
+  <h2 class="title-content">{{ 'pages.movies.title' | translate}}</h2>
+
+</div>
+  <div>
+    <i class="bi bi-search icon-search-movies"></i>
+    <input
+      class="search-movies"
+      [(ngModel)]="searchText"
+      (ngModelChange)="searchMovie()"
+      placeholder="{{'pages.movies.search-movie-placeholder' | translate}}"
+    />
+  </div>
+  <p class="list-movies-number">
+    {{ numberMoviesDisplayed | number : "2.0" }} {{'pages.movies.film-list-label' | translate}}
+  </p>
+  <div class="display-movies" [ngClass]="{'message-no-movies': numberMoviesDisplayed == 0}">
+    @if(searchText == '') {
+      @for (movie of movies; track $index) {
+        <app-movie-card [notChangeIcon]="apiNotWorking" [id]="movie.id" [title]="movie.title" [imgSrc]="movie.poster_path_complete" [date]="movie.release_date" (likeChange)="toggleFavorite(movie.id, $event)" [liked]="isMovieInFavorites(movie.id)" [language]="this.language.code"></app-movie-card>
+      }
+    } @else { 
+      @for (movie of moviesSearch; track $index) {
+        <app-movie-card [notChangeIcon]="apiNotWorking" [id]="movie.id" [title]="movie.title" [imgSrc]="movie.poster_path_complete" [date]="movie.release_date" (likeChange)="toggleFavorite(movie.id, $event)" [liked]="isMovieInFavorites(movie.id)" [language]="this.language.code"></app-movie-card>
+      }
+    }
+   
+    @if (numberMoviesDisplayed == 0) {
+      <div class="message-no-movies">
+        <h5>Nenhum filme para ser exibido</h5>
+      </div>
+    }
+    
+  </div>
+  <div class="see-more-movies">
+    @if(searchText == '') {
+      <app-common-button (click)="seeMore()" label="{{'pages.see-more-button' | translate}}" [iconClass]="'bi bi-arrow-down'" [largerButton]="true"></app-common-button>
+    }
+  </div>
+  <div class="alert-container">
+    <div *ngIf="apiFailAlert" class="alert alert-danger alert-dismissible text-center fade show" role="alert">
+      <strong>Falha ao Favoritar!</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="apiFailAlert = false"></button>
+    </div>
+  </div>
+</div>
+

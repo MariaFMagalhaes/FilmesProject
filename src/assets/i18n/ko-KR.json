@@ -1,0 +1,55 @@
+{
+  "sidenav": {
+    "inicio": "홈",
+    "filmes": "영화",
+    "configuracoes": "설정",
+    "sair": "출구"
+  },
+  "pages": {
+    "home": {
+    "banner-title": "영화 목록 만들기",
+    "banner-content": "좋아하는 영화를 저장하고 모든 세부 사항을 확인하세요.",
+    "banner-button": "영화 보기",
+    "favorites-title": "좋아하는 영화!",
+    "no-favorite-message": "즐겨 찾는 영화를 추가하세요!"
+
+    
+},
+
+    "movies": {
+      "title": "영화들",
+      "search-movie-placeholder": "영화를 검색해 보세요...",
+      "film-list-label": "나열된 영화"
+    },
+    "movie-details": {
+      "cast": "깁스",
+      "synopsis": "개요",
+      "directed": "감독",
+      "released": "출시일",
+      "forms-review": {
+        "title": "리뷰 작성",
+        "date": "시청 날짜",
+        "content": "리뷰 내용",
+        "button": "제출",
+        "messages": {
+          "all": "제출을 위해 모든 필드를 채워주세요!",
+          "date": "날짜를 입력해주세요",
+          "review": "리뷰를 남겨주세요"
+        }
+      },
+      "reviews": "모든 리뷰",
+      "messages": {
+        "no-cast": "출연진 정보가 없습니다.",
+        "no-synopsis": "줄거리가 아직 없습니다.",
+        "no-reviews": "이 영화에는 아직 리뷰가 없습니다.",
+        "posted": "성공적으로 게시되었습니다!",
+        "fail-post": "게시 실패!"
+      }
+    },
+    "see-more-button": "더 보기"
+  },
+  "breadcrumb": {
+    "/": "홈",
+    "movies": "영화"
+  }
+}

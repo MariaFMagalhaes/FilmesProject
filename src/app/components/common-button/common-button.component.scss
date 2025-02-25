@@ -1,0 +1,31 @@
+button {
+  background-color: #1d4ed8;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items : baseline;
+}
+
+button i {
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.larger-button {
+  width: 135px;
+  padding: 12 px 0;
+}
+
+.pill-button {
+  border-radius: 50px;
+}
+
+.invert-colors {
+  background-color: white !important;
+  color: #1d4ed8 !important;
+}

@@ -1,0 +1,13 @@
+<ol style="--bs-breadcrumb-divider: '-'" class="breadcrumb">
+  <li
+    *ngFor="let breadcrumb of breadcrumbs; let i = index; let last = last"
+    class="breadcrumb-item"
+    [routerLink]="!last ? breadcrumb.router: null"
+    [ngClass]="{
+      'breadcrumb-active': last,
+      clickable: !last
+    }"
+  >
+    {{ breadcrumb.label | translate}}
+  </li>
+</ol>

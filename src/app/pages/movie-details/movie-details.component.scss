@@ -1,0 +1,249 @@
+.details {
+  display: flex;
+  gap: 30px;
+}
+
+h5,
+h3 {
+  font-weight: bold;
+}
+
+.box-details {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.film-details {
+  height: 100%;
+  max-width: 410px;
+}
+
+.film-details button {
+  cursor: initial;
+}
+
+.img-film {
+  height: 500px;
+  width: 360px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.footer-details {
+  margin-top: 13px;
+  display: flex;
+}
+
+.rate-details {
+  gap: 12px;
+  display: flex;
+  font-size: 18px;
+  padding: 12px 16px;
+  font-weight: bold;
+}
+
+.text-footer-details {
+  padding: 5px 0 5px 25px;
+  text-align: left;
+}
+
+.text-footer-details p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.date-text-footer-details {
+  margin-top: 5px !important;
+}
+
+.categories-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  padding-top: 15px;
+}
+
+.other-details {
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.elenco-container {
+  padding-top: 25px;
+}
+
+.elenco-see-more {
+  display: flex;
+  justify-content: end;
+}
+
+.elenco-see-more-button {
+  font-size: 12px;
+  padding: 12px 15px;
+}
+
+.sinopse-details p {
+  padding-top: 10px;
+}
+
+.actor-modal-body {
+  padding: 20px 20px;
+}
+
+.actor-modal-body:hover {
+  background-color: rgba(224, 224, 224, 0.445);
+  border-radius: 10px;
+}
+
+.elenco-item:hover {
+  background-color: rgba(224, 224, 224, 0.445);
+  border-radius: 10px;
+}
+
+.reviews {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.make-review {
+  height: fit-content;
+  width: 410px;
+  max-width: 410px;
+}
+
+.make-review h5 {
+  text-align: center;
+}
+
+.forms-make-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+
+  input,
+  textarea {
+    border: 1px solid #1d4ed8;
+    border-radius: 5px;
+    resize: none;
+  }
+
+  input,
+  label {
+    display: block;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+  }
+}
+
+.watchedDate {
+  margin-top: 10px;
+}
+
+.form-item {
+  float: left;
+}
+
+.button-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#reviewContent {
+  width: 100%;
+  height: 100px;
+}
+
+.review-content {
+  margin-top: 10px;
+
+}
+
+.all-reviews {
+  width: 45vw;
+  height: fit-content;
+  h5 {
+    margin-bottom: 20px;
+  }
+}
+
+.message-form {
+  padding: none;
+}
+
+.reviews-users-container {
+  width: 100%;
+}
+
+.review-users {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  margin: 10px 0;
+
+  p {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  img {
+    width: 60px;
+    height: auto;
+  }
+}
+
+.review-user-details{
+  width: 100%;
+}
+
+.header-review-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.items-header-review-details {
+  display: flex;
+  gap: 25px;
+}
+
+.review-date-details {
+  color: grey;
+}
+
+.rate-review-details {
+  padding-right: 10px;
+
+  span {
+    margin: 0 5px;
+  }
+}
+
+.username-review-details {
+  font-weight: bold;
+}
+
+.alert-container {
+  position:fixed; 
+  top: 10px; 
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  z-index:9999; 
+  border-radius:0px;
+  .alert {
+    width: 50%;
+  }
+}

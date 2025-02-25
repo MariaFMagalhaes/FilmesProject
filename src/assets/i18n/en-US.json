@@ -1,0 +1,53 @@
+{
+  "sidenav": {
+    "inicio": "Home",
+    "filmes": "Movies",
+    "configuracoes": "Configurations",
+    "sair": "Exit"
+  },
+  "pages": {
+    "home": {
+      "banner-title": "Create your movie list",
+      "banner-content": "Save your favorite movies and stay updated with all the details.",
+      "banner-button": "View movies",
+      "favorites-title": "Your favorite movies",
+      "no-favorite-message": "Add your favorite movies!"
+    },
+    "movies": {
+      "title": "Movies",
+      "search-movie-placeholder": "Search for a movie...",
+      "film-list-label": "listed movies"
+    },
+    "movie-details": {
+      "cast": "Cast",
+      "synopsis": "Synopsis",
+      "directed": "Directed by",
+      "released": "Released on",
+      "forms-review": {
+        "title": "Write Your Review",
+        "date": "Viewing Date",
+        "content": "Your Review",
+        "button": "Submit",
+        "messages": {
+          "all": "Please fill in all fields to submit!",
+          "date": "Please enter a date",
+          "review": "Please leave a review"
+        }
+      },
+      "reviews": "All Reviews",
+      "messages": {
+        "no-cast": "No cast available.",
+        "no-synopsis": "No synopsis available yet.",
+        "no-reviews": "This movie has no reviews yet.",
+        "posted": "Posted successfully!",
+        "fail-post": "Failed to post!"
+      }
+    },
+
+    "see-more-button": "See more"
+  },
+  "breadcrumb": {
+    "/": "Home",
+    "movies": "Movies"
+  }
+}
