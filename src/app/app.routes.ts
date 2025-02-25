@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 import { MoviesComponent } from './pages/movies/movies.component';
 import { MovieDetailsComponent } from './pages/movie-details/movie-details.component';
+import { ConfigurationsComponent } from './pages/configurations/configurations.component';
 
 export const routes: Routes = [
     {
@@ -20,7 +21,7 @@ export const routes: Routes = [
                 component: MoviesComponent,
                 data: {
                     breadcrumb: [
-                        {label: 'Início', router: '/'}, 
+                        {label: 'Início', router: '/'},
                         {label: 'Filmes', router: 'movies'}
                     ]
                 }
@@ -30,16 +31,21 @@ export const routes: Routes = [
                 component: MovieDetailsComponent,
                 data: {
                     breadcrumb: [
-                        {label: 'Início', router: '/'}, 
+                        {label: 'Início', router: '/'},
                         {label: 'Filmes', router: 'movies'},
                         {label: 'Detalhes', router: 'movie'}
                     ]
 
                 }
             },
+
+            {
+              path: 'configs',
+              component: ConfigurationsComponent
+            }
         ]
     },
-    
+
     {
         path:'**',
         component: NotFoundComponent

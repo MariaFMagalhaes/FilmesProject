@@ -1,1 +1,10 @@
-<p>configurations works!</p>
+<div class="content">
+
+    <div class="box-container">
+      <div class="content-box-container">
+        <h2>Configurações</h2>
+        <p>Deixe sua opnião</p>
+        <textarea [(ngModel)]="option"></textarea>
+        <app-common-button [label]="'Enviar'" (click)="submitOption()"></app-common-button>
+      </div>
+</div>
