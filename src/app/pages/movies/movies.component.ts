@@ -63,7 +63,7 @@ export class MoviesComponent implements OnInit, OnDestroy {
 
   getMovies(restart: boolean = false) {
     this.subscriptionMovies = this.moviesService
-      .getPopularMovies(this.numberMoviesPerPage, this.language.code)
+      .getTopRatedMovies(this.numberMoviesPerPage, this.language.code)
       .subscribe({
         next: (res) => {
           if (!restart) {

@@ -20,7 +20,7 @@ export class MovieService {
 
   constructor(private http: HttpClient) { }
 
-  public getPopularMovies(
+  public getTopRatedMovies(
     page: number,
     language: string
   ): Observable<{results: []}> {
