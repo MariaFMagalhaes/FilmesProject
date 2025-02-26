@@ -34,6 +34,17 @@ export class MovieService {
     });
   }
 
+  public getPopularMovies(page: number, language: string): Observable<{results: []}> {
+    const params = new HttpParams()
+      .set('language', language)
+      .set('page', page);
+
+    return this.http.get<{results: []}>(`${this.apiURL}/popular`, {
+      params: params,
+      headers: this.defaultHeaders,
+    });
+  }
+
   public getDetailsMovies(id: number, language: string): Observable<Movie> {
     const params = new HttpParams().set('language', language);
 

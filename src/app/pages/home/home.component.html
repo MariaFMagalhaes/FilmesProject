@@ -12,7 +12,7 @@
     </div>
   </div>
   <h2 class="title-content">{{'pages.home.favorites-title'| translate}}</h2>
-  <div class="favorite-movies">
+  <div class="movies-container">
     <h4 *ngIf="!movies || movies.length == 0">{{'pages.home.no-favorite-message' | translate}}</h4>
     <div id="carousel-favorites" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -53,6 +53,53 @@
         data-bs-slide="next"
         (click)="nextCarousel()"
         *ngIf="movies && carouselMax < movies.length"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+      </div>
+
+    </div>
+  </div>
+  <h2 class="title-content">Filmes Populares</h2>
+  <div class="movies-container">
+    <h4 *ngIf="!popularMovies || popularMovies.length == 0">Ainda não tem filmes</h4>
+    <div id="carousel-favorites" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container-fluid">
+            <div class="carousel-items-favorite">
+              @for (movie of popularMovies | slice : carouselMinPopular : carouselMaxPopular; track $index;) {
+                <app-movie-card
+                [notChangeIcon]="true"
+                [id]="movie.id"
+                [title]="movie.title"
+                [imgSrc]="movie.poster_path_complete"
+                [date]="movie.release_date"
+                [language]="this.language.code"
+              ></app-movie-card>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-favorites-buttons">
+        <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel-favorites"
+        data-bs-slide="prev"
+        (click)="prevCarouselPopular()"
+        *ngIf="carouselMinPopular !== 0"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button
+        class="carousel-control-next carousel-button"
+        type="button"
+        data-bs-target="#carousel-favorites"
+        data-bs-slide="next"
+        (click)="nextCarouselPopular()"
+        *ngIf="popularMovies && carouselMaxPopular < popularMovies.length"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
       </button>

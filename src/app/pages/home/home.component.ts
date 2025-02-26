@@ -32,9 +32,12 @@ export class HomeComponent implements OnInit, OnDestroy {
   movieImageUrl: string = 'https://image.tmdb.org/t/p/w500/';
   movies: Movie[] = [];
   favoritesMovies: Favorite[] = [];
+  popularMovies: Movie[] = [];
   language!: Language;
   carouselMin: number = 0;
+  carouselMinPopular: number = 0;
   carouselMax: number = 4;
+  carouselMaxPopular: number = 4;
 
   constructor(
     private movieService: MovieService,
@@ -62,13 +65,15 @@ export class HomeComponent implements OnInit, OnDestroy {
             this.movies = [];
           }
           this.favoritesMovies = favorite;
-          this.getMovies();
+          this.getToFavoritesMovies();
+          this.getPopularMovies();
+
         },
         error: (err) => console.error(err),
       });
   }
 
-  getMovies() {
+  getToFavoritesMovies() {
     for (let favorite of this.favoritesMovies) {
       this.movieSubscription = this.movieService
         .getDetailsMovies(favorite.movieId, this.language.code)
@@ -139,9 +144,41 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
   }
 
+  getPopularMovies() {
+    this.movieService
+    .getPopularMovies(this.carouselMaxPopular, this.language.code)
+    .subscribe({
+      next: (popular) => {
+        if(this.popularMovies) {
+          this.popularMovies = [
+            ...this.popularMovies,
+            ...popular.results.map((movie: Movie) => ({
+              ...movie,
+              poster_path_complete: this.movieImageUrl + movie.poster_path,
+            })),
+          ];
+        } else {
+          this.popularMovies = [
+            ...popular.results.map((movie: Movie) => ({
+              ...movie,
+              poster_path_complete: this.movieImageUrl + movie.poster_path,
+            })),
+          ];
+        }
+
+      },
+      error: (err) => console.error(err),
+    });
+  }
+
   prevCarousel() {
     this.carouselMin -= 4;
     this.carouselMax -= 4;
+  }
+
+  prevCarouselPopular() {
+    this.carouselMinPopular -= 4;
+    this.carouselMaxPopular -= 4;
   }
 
   nextCarousel() {
@@ -149,9 +186,17 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.carouselMax += 4;
   }
 
+  nextCarouselPopular() {
+    this.carouselMinPopular += 4;
+    this.carouselMaxPopular += 4;
+    this.getPopularMovies();
+  }
+
   restartCarousel() {
     this.carouselMax = 4;
+    this.carouselMaxPopular = 4;
     this.carouselMin = 0;
+    this.carouselMaxPopular = 4;
   }
 
   ngOnDestroy(): void {
