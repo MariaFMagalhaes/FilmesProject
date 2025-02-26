@@ -50,6 +50,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       next: (language) => {
         this.language = language;
         this.getFavorites(true);
+        this.getPopularMovies();
       },
       error: (err) => console.error(err),
     });
@@ -66,7 +67,6 @@ export class HomeComponent implements OnInit, OnDestroy {
           }
           this.favoritesMovies = favorite;
           this.getToFavoritesMovies();
-          this.getPopularMovies();
 
         },
         error: (err) => console.error(err),
@@ -103,7 +103,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     return false;
   }
 
-  toggleFavorite(movieId: number, liked: boolean) {
+  toggleDesfavorite(movieId: number, liked: boolean) {
     let user = 'Grogu';
 
     const movie = this.movies.find((movie) => movie.id === movieId);
@@ -113,11 +113,9 @@ export class HomeComponent implements OnInit, OnDestroy {
         .subscribe({
           next: (favorite) => {
             if (favorite[0] && favorite[0].id) {
-              console.log('Removido: ', favorite);
 
               this.favoriteService.deleteFavorite(favorite[0]).subscribe({
                 next: (favorite) => {
-                  console.log(this.favoritesMovies);
 
                   this.movies.filter((movie) => {
                     if (movie.id == favorite.movieId) {
@@ -126,6 +124,7 @@ export class HomeComponent implements OnInit, OnDestroy {
                       this.movies.splice(index, 1);
                     }
                   });
+
                   this.favoritesMovies.filter((favoriteSearch) => {
                     if (favoriteSearch.id == favorite.id) {
                       let indexFavorite =
@@ -134,6 +133,7 @@ export class HomeComponent implements OnInit, OnDestroy {
                     }
                   });
 
+                  this.getPopularMovies();
                   this.restartCarousel();
                 },
               });
@@ -141,6 +141,25 @@ export class HomeComponent implements OnInit, OnDestroy {
           },
           error: (err) => console.error(err),
         });
+    }
+  }
+
+  toggleFavorite(movieId: number, liked: boolean) {
+    let user = 'Grogu';
+
+    const movie = this.popularMovies.find((movie) => movie.id === movieId);
+    if (movie) {
+      if (liked) {
+        this.favoriteService
+        .setFavorite({ movieId: movieId, user: user })
+        .subscribe((favorite) => {this.getFavorites(true);});
+      } else {
+        const favorite = this.favoritesMovies.find((movie) => movie.movieId == movieId);
+        if(favorite) {
+          this.favoriteService.deleteFavorite(favorite).subscribe((favorite) => {this.getFavorites(true);});
+        }
+      }
+
     }
   }
 
@@ -194,9 +213,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   restartCarousel() {
     this.carouselMax = 4;
-    this.carouselMaxPopular = 4;
     this.carouselMin = 0;
-    this.carouselMaxPopular = 4;
   }
 
   ngOnDestroy(): void {

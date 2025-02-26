@@ -399,33 +399,13 @@
   ],
   "favorites": [
     {
-      "id": "1d5a",
-      "movieId": 710295,
+      "id": "f112",
+      "movieId": 129,
       "user": "Grogu"
     },
     {
-      "id": "35f9",
-      "movieId": 539972,
-      "user": "Grogu"
-    },
-    {
-      "id": "2475",
-      "movieId": 845781,
-      "user": "Grogu"
-    },
-    {
-      "id": "506f",
-      "movieId": 278,
-      "user": "Grogu"
-    },
-    {
-      "id": "9172",
-      "movieId": 238,
-      "user": "Grogu"
-    },
-    {
-      "id": "a1d1",
-      "movieId": 240,
+      "id": "ba43",
+      "movieId": 573435,
       "user": "Grogu"
     }
   ]

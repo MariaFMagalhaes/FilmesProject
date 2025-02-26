@@ -26,7 +26,7 @@
                 [title]="movie.title"
                 [imgSrc]="movie.poster_path_complete"
                 [date]="movie.release_date"
-                (likeChange)="toggleFavorite(movie.id, $event)"
+                (likeChange)="toggleDesfavorite(movie.id, $event)"
                 [liked]="isMovieInFavorites(movie.id)"
                 [language]="this.language.code"
               ></app-movie-card>
@@ -70,11 +70,12 @@
             <div class="carousel-items-favorite">
               @for (movie of popularMovies | slice : carouselMinPopular : carouselMaxPopular; track $index;) {
                 <app-movie-card
-                [notChangeIcon]="true"
                 [id]="movie.id"
                 [title]="movie.title"
                 [imgSrc]="movie.poster_path_complete"
                 [date]="movie.release_date"
+                (likeChange)="toggleFavorite(movie.id, $event)"
+                [liked]="isMovieInFavorites(movie.id)"
                 [language]="this.language.code"
               ></app-movie-card>
               }
