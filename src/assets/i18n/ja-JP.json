@@ -11,9 +11,9 @@
       "banner-content": "お気に入りの映画を保存し、すべての詳細を確認しましょう。",
       "banner-button": "映画を見る",
       "favorites-title": "お気に入りの映画",
-"no-favorite-message": "お気に入りの映画を追加してください!"
-
-
+      "no-favorite-message": "お気に入りの映画を追加してください!",
+      "popular-title": "人気の映画!",
+      "popular-message": "まだ映画はありません"
     },
 
     "movies": {

@@ -11,7 +11,9 @@
       "banner-content": "Save your favorite movies and stay updated with all the details.",
       "banner-button": "View movies",
       "favorites-title": "Your favorite movies",
-      "no-favorite-message": "Add your favorite movies!"
+      "no-favorite-message": "Add your favorite movies!",
+      "popular-title": "Popular Movies!",
+      "popular-message": "No movies yet"
     },
     "movies": {
       "title": "Movies",

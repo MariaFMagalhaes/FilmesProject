@@ -60,9 +60,9 @@
 
     </div>
   </div>
-  <h2 class="title-content">Filmes Populares</h2>
+  <h2 class="title-content">{{'pages.home.popular-title'| translate}}</h2>
   <div class="movies-container">
-    <h4 *ngIf="!popularMovies || popularMovies.length == 0">Ainda não tem filmes</h4>
+    <h4 *ngIf="!popularMovies || popularMovies.length == 0">{{'pages.home.no-popular-message'| translate}}</h4>
     <div id="carousel-favorites" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">

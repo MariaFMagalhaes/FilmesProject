@@ -11,7 +11,9 @@
       "banner-content": "Salve seus filmes favoritos e fique por dentro de todos os detalhes.",
       "banner-button": "Ver filmes",
       "favorites-title": "Seus filmes favoritos",
-      "no-favorite-message": "Adicione seus filmes favoritos!"
+      "no-favorite-message": "Adicione seus filmes favoritos!",
+      "popular-title": "Filmes Populares!",
+      "popular-message": "Ainda não tem filmes"
     },
     "movies": {
       "title": "Filmes",
